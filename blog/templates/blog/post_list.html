@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sumit blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="https://github.ncsu.edu/sjha3/my_blog_using_django/">Sumit Blog</a></h1>
+        </div>
+
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
+        <div>
+            <p>published: 01/10/2017, 15:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p> Pyaar bahut karte hain tumse, Ishq hai tu hamara sanam</p>
+        </div>
+    </body>
+</html>
